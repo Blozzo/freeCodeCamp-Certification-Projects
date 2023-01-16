@@ -1,0 +1,136 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a Survey Form</p>
+    <form id="survey-form" action="">
+        <fieldset>
+            <label for="name" id="name-label">Name: <input id="name" type="text" placeholder="Enter your name" required></label>
+            <label for="email" id="email-label">Email: <input id="email" type="email" placeholder="Enter your email" required></label>
+            <label for="password-label" id="password-label">Password: <input id="password" type="password" min="8" max="60" placeholder="Your password" required></label>
+            <label for="number" id="number-label">Age: <input id="number" type="number" min="18" max="120" placeholder="Your age" required></label>
+        </fieldset>
+        <fieldset> ¿Which animal do you like the most?
+            <select name="dropdown" id="dropdown">
+                <option value="">Choose an option</option>
+                <option value="1">Dogs</option>
+                <option value="2">Cats</option>
+                <option value="3">Axolotl</option>
+                <option value="4">Hamster</option>
+                <option value="5">Chameleon</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <p>Your favourite gaming device</p>
+            <label for="pc"><input id="pc" type="radio" name="device" class="inline" value="pc"/> PC</label>
+            <label for="playstation"><input id="playstation" type="radio" name="device" class="inline" value="playstation" /> Play Station</label>
+            <label for="xbox"><input id="xbox" type="radio" name="device" class="inline" value="xbox"/> XBox</label>
+            <p>¿Joystick or Mouse and Keybord?</p>
+            <label for="joystick"><input id="joystick" type="checkbox" name="none" class="inline" value="joystick"/> Joystick</label>
+            <label for="mouse-and-keyboard"><input id="mouse-and-keyboard" type="checkbox" name="none" class="inline" value="mouse-and-keyboard"/> Mouse and Keyboard</label>
+        </fieldset>
+        <fieldset>
+            <p>Leave a comment</p>
+            <textarea name="comments" id="textarea" cols="30" rows="10"></textarea>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+:root{
+    --color1: #DDDDDD;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #222831;
+    color: var(--color1);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+h1{
+    font-size: 48px;
+    margin: 0.3em auto;
+    text-align: center;
+}
+p{
+    margin: 0.3em auto;
+    text-align: center;
+}
+
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+}
+fieldset:last-of-type {
+    border-bottom: none;    
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input, textarea, select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+    background-color: var(--color1);
+    border: 1px solid var(--color1);
+    border-radius: 5px;
+    color: #222831;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 50%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #F05454;
+    color: var(--color1);
+    border-radius: 20px;
+    border-color: #222831;
+    min-width: 200px;
+}
+
+** end of undefined **
+
